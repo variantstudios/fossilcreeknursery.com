@@ -1,0 +1,59 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+@import "compass/css3";
+@import "breakpoint";
+@import "singularitygs";
+
+.project-label {
+	display: inline-block;
+	font-weight: 700;
+	padding-right: 5px;
+}
+
+.node-product.view-mode-full  {
+	.flag-outer {
+		margin: 20px 0 0;
+	}
+	.product-left  {
+		float: left;
+	  width: 50%;
+	  position: relative;
+		@include breakpoint($phone) {
+			width: 100%;
+		}
+	.colorbox {
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0.5em;
+				background-color: rgba(11, 11, 11, 0.81);
+				background-image: url('../images/search.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+				width: 60px;
+				height: 60px;
+				right: 2em;
+				text-align: center;
+			}
+		}
+		img {
+			padding-right: 2em;
+		  width: 100%;
+		  padding-top: 1.2em;
+		  @include breakpoint($phone) {
+				padding-right: 0;
+			}
+		}
+	}
+	.product-right {
+		@include breakpoint($tablet) {
+			overflow: hidden;
+		}
+	}
+}
+
+
+#edit-line-item-fields-field-gift-certificate-amount-und-0-amount {
+	width: auto;
+	margin: 5px 10px 0 0px;
+}

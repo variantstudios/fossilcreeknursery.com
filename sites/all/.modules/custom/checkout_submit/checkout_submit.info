@@ -1,0 +1,5 @@
+name = Checkout Submit
+description = This module changes Submit label on checkout page to "Submit Your Order" instead of "Continue".
+core = 7.x
+package = Commerce
+files[] = checkout_submit.module

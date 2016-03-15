@@ -1,0 +1,26 @@
+From e5ce0828d30164d91db87893c6a5b91ecc413ce0 Mon Sep 17 00:00:00 2001
+From: danreb <adolfo@danreb.com>
+Date: Mon, 25 Mar 2013 00:07:41 -0500
+Subject: [PATCH] Update wishlist block on click of add to wishlist link
+
+---
+ sites/all/modules/commerce_wishlist/commerce_wishlist.module |    2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/sites/all/modules/commerce_wishlist/commerce_wishlist.module b/sites/all/modules/commerce_wishlist/commerce_wishlist.module
+index 46bc8c4..2f21fc6 100644
+--- a/sites/all/modules/contrib/commerce_wishlist/commerce_wishlist.module
++++ b/sites/all/modules/contrib/commerce_wishlist/commerce_wishlist.module
+@@ -325,7 +325,9 @@ function commerce_wishlist_operations() {
+       switch ($args[1]) {
+         case 'add' :
+           $link = _commerce_wishlist_link($args[2]);
++          $update_wishlist_block = views_embed_view('wishlist', 'block_1');
+           $commands[] = ajax_command_replace('a#add-wishlist-' . $args[3], $link);
++          $commands[] = ajax_command_replace('#block-views-wishlist-block-1 .view-display-id-block_1', $update_wishlist_block);
+         break;
+       }
+       ajax_deliver(array('#type' => 'ajax', '#commands' => $commands));
+-- 
+1.7.10.1
+

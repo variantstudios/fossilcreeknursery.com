@@ -1,0 +1,236 @@
+@import 'partials/global/mixins';
+@import 'partials/global/variables';
+@import "breakpoint";
+@import "singularitygs";
+
+
+
+	
+@include breakpoint($desktop) {
+
+.mobile-bar {
+  display: none;
+}
+	#menu-clone, #openmenu {
+		display: none;
+	}
+
+	nav {
+	  padding: 5px 0;
+	  .main-menu, .top-menu {
+		  ul {
+		     padding: 0;
+		     float: right;
+		    li, li.leaf, li.collapsed {
+		      display: block;
+		      list-style: none;
+		      float: left;
+		      padding-left: 17px;
+		    }
+		    ul {
+			    background: #fff;
+			    text-align: left;
+			    padding: 0px;
+			    margin: 0px;
+			    position: fixed;
+			    z-index: 999;
+			    padding: 10px 0;
+			    width: 200px;
+			    @include border-radius(4px);
+			    margin: 25px 0 0 -20px;
+			    box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+			    &:after {
+				    content: '';
+						position: absolute;
+						border-style: solid;
+						border-width: 0 12px 12px;
+						border-color: #FFFFFF transparent;
+						display: block;
+						width: 0;
+						z-index: 1;
+						margin-left: -12px;
+						top: -12px;
+						left: 30px;
+			    }
+			    li {
+				    display: block;
+				    float: none;
+				    padding: 0;
+				    margin: 0;
+				    a {
+					    font-size: 18px;
+					    padding: 5px 20px;
+					    &:hover {
+						    color: saturate(#52854D, 40%);
+					    }
+				    }
+			    }
+		    }
+		    .last {
+			    ul {
+				    margin: 25px 0 0 -135px;
+				    &:after {
+				      left: 170px;
+				    }
+			    }
+		    }
+		  }
+		  a, span {
+		    text-decoration: none;
+		    color: #52854D;
+		    font-style: normal;
+		    font-size: 20px;
+	    	font-family: "proxima-nova",sans-serif;
+				font-weight: 700;
+		    font-size: 24px;
+		  }
+		}
+	}
+	
+	nav {
+		.top-menu {
+		  margin-top: 10px;
+		  padding-bottom: 40px;
+		  
+			ul {
+			margin: 0;
+				li, li.leaf, li.collapsed {
+				padding-left: 25px;
+				position: relative;
+				
+					a {
+						font-size: 16px;
+						color: #134132;
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+	
+	.ie8, .ie7 {
+	.mobile-bar {
+  display: none;
+}
+	#menu-clone, #openmenu {
+		display: none;
+	}
+
+	nav {
+	  padding: 5px 0;
+	  .main-menu, .top-menu {
+		  ul {
+		     padding: 0;
+		     float: right;
+		    li, li.leaf, li.collapsed {
+		      display: block;
+		      list-style: none;
+		      float: left;
+		      padding-left: 2;
+		    }
+		    ul {
+			    background: #fff;
+			    text-align: left;
+			    padding: 0px;
+			    margin: 0px;
+			    position: fixed;
+			    z-index: 999;
+			    padding: 10px 0;
+			    width: 200px;
+			    @include border-radius(4px);
+			    margin: 25px 0 0 -20px;
+			    box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+			    &:after {
+				    content: '';
+						position: absolute;
+						border-style: solid;
+						border-width: 0 12px 12px;
+						border-color: #FFFFFF transparent;
+						display: block;
+						width: 0;
+						z-index: 1;
+						margin-left: -12px;
+						top: -12px;
+						left: 30px;
+			    }
+			    li {
+				    display: block;
+				    float: none;
+				    padding: 0;
+				    margin: 0;
+				    a {
+					    font-size: 18px;
+					    padding: 5px 20px;
+					    &:hover {
+						    color: saturate(#52854D, 40%);
+					    }
+				    }
+			    }
+		    }
+		    .last {
+			    ul {
+				    margin: 25px 0 0 -135px;
+				    &:after {
+				      left: 170px;
+				    }
+			    }
+		    }
+		  }
+		  a {
+		    text-decoration: none;
+		    color: #52854D;
+		    font-style: normal;
+		    font-size: 20px;
+	    	font-family: "proxima-nova",sans-serif;
+				font-weight: 700;
+		    font-size: 20px;
+		    margin-left: 10px
+		  }
+		}
+	}
+	
+	nav {
+		.top-menu {
+		  margin-top: 10px;
+		  padding-bottom: 50px;
+			ul {
+				li, li.leaf, li.collapsed {
+				padding-left: 25px;
+				position: relative;
+				&.last {
+					&:before {
+						content: "\f0e5";
+				    font-family: FontAwesome;
+				    font-style: normal;
+				    font-weight: normal;
+				    text-decoration: inherit;
+				/*--adjust as necessary--*/
+				    color: #134132;
+				    font-size: 15px;
+				    padding-right: 0.1em;
+				    position: absolute;
+				    top: 5px;
+				    left: 0;
+					}
+				}
+					a {
+						font-size: 16px;
+						color: #134132;
+					}
+				}
+			}
+		}
+	}
+	
+	}
+	
+	
+@include breakpoint($lg-desktop) {
+	.main-menu, .top-menu {
+		li, li.leaf, li.collapsed {
+			padding-left: 35px !important;
+		}
+	}
+}

@@ -1,0 +1,229 @@
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\000039}}
+.calendar-calendar h5 {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\0000311}}
+.calendar-calendar h5 a {
+  color: #52854D;
+}
+@media (min-width: 0) and (max-width: 760px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\0000311}}
+  .calendar-calendar h5 a {
+    font-size: 135%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\0000316}}
+.calendar-calendar h5 a:visited {
+  color: #52854D;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\0000321}}
+.calendar-calendar .date-display-single {
+  font-size: 115%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\0000325}}
+.calendar-calendar td .inner div.day a {
+  color: #888;
+  font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\0000333}}
+.calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview, .calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview {
+  background: #fff;
+  padding: 5px;
+  margin: 2px 2px 5px;
+}
+
+/*-----------------------------
+     CALENDAR
+-------------------------------*/
+/* Show the stripes one below the other (if there are more than one term) */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\0000348}}
+.calendar-calendar .day-view td .stripe,
+.calendar-calendar .month-view .full td .stripe,
+.calendar-calendar .week-view .full td .stripe {
+  position: relative;
+}
+
+/* move content back to top, as there could be more than one stripe now */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\0000355}}
+.calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
+.calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents {
+  position: absolute;
+  top: 0;
+}
+
+/* same for the continuation marker at the end */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\0000365}}
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
+  top: 0;
+}
+
+/*-----------------------------
+    CALENDAR
+-------------------------------*/
+/* ---- Pager ---- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\0000375}}
+.view-calendar ul.pager {
+  width: 150px;
+  margin: 0 auto !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\0000379}}
+.view-calendar ul.pager li.date-next,
+.view-calendar ul.pager li.date-prev {
+  padding: 0;
+  margin: 0;
+  width: 85px;
+  background: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\0000386}}
+.view-calendar ul.pager li.date-next a:hover,
+.view-calendar ul.pager li.date-prev a:hover {
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\0000391}}
+.view-calendar ul.pager li.date-prev {
+  right: 70px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003102}}
+.calendar-calendar .month-view .full td.single-day div.monthview tbody tr:hover,
+.calendar-calendar .week-view .full td.single-day div.weekview tbody tr:hover,
+.calendar-calendar .day-view .full td.single-day div.dayview tbody tr:hover {
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003107}}
+.calendar-calendar .month-view .full td.single-day div.monthview .views-field-title,
+.calendar-calendar .week-view .full td.single-day div.weekview .views-field-title,
+.calendar-calendar .day-view .full td.single-day div.dayview .views-field-title {
+  line-height: 0.6em;
+  margin: 0 0 2px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003110}}
+.calendar-calendar .month-view .full td.single-day div.monthview .views-field-title span,
+.calendar-calendar .week-view .full td.single-day div.weekview .views-field-title span,
+.calendar-calendar .day-view .full td.single-day div.dayview .views-field-title span {
+  line-height: 1em;
+  font-size: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003113}}
+.calendar-calendar .month-view .full td.single-day div.monthview .views-field-title span a,
+.calendar-calendar .week-view .full td.single-day div.weekview .views-field-title span a,
+.calendar-calendar .day-view .full td.single-day div.dayview .views-field-title span a {
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003117}}
+.calendar-calendar .month-view .full td.single-day div.monthview .views-field-title span a:hover,
+.calendar-calendar .week-view .full td.single-day div.weekview .views-field-title span a:hover,
+.calendar-calendar .day-view .full td.single-day div.dayview .views-field-title span a:hover {
+  color: #333;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003124}}
+.calendar-calendar .month-view .full td.single-day div.monthview .views-field-field-performance-date-and-time span,
+.calendar-calendar .week-view .full td.single-day div.weekview .views-field-field-performance-date-and-time span,
+.calendar-calendar .day-view .full td.single-day div.dayview .views-field-field-performance-date-and-time span {
+  font-size: 12px;
+  color: #555;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003131}}
+.calendar-calendar .month-view .full td.single-day div.monthview .event-cal-icon a,
+.calendar-calendar .week-view .full td.single-day div.weekview .event-cal-icon a,
+.calendar-calendar .day-view .full td.single-day div.dayview .event-cal-icon a {
+  display: block;
+  height: 40px;
+  width: 40px;
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+/* TODAY */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003142}}
+.calendar-calendar .month-view .full tr td.single-day.today,
+.calendar-calendar .month-view .full td.date-box.today {
+  border-left: 2px solid #EDBB1A;
+  border-right: 2px solid #EDBB1A;
+  border-color: #EDBB1A;
+}
+
+/* HOVER */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003150}}
+.calendar-calendar div.day {
+  color: #888;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003157}}
+.calendar-calendar table.full tbody tr:hover td {
+  background: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003161}}
+.calendar-calendar table.full tbody tr td {
+  background: #fff;
+}
+
+/*  TABLE HEAD*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003169}}
+.calendar-calendar td {
+  border: 1px solid #bbb;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003172}}
+.calendar-calendar th.days {
+  background: #ddd;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border: 1px solid #ddd;
+}
+
+/* ---- RESPONSIVE LAYOUT FOR MOBILE ---- */
+@media (max-width: 740px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003186}}
+  .calendar-calendar td,
+  .calendar-calendar .month-view .full tr td.single-day.today,
+  .calendar-calendar tbody,
+  .calendar-calendar .month-view .full td.single-day .calendar-empty,
+  .calendar-calendar .month-view .full td.single-day.empty,
+  .calendar-calendar .month-view .full td.date-box.empty {
+    border: 0;
+    background: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003190}}
+  .calendar-calendar tr.date-box {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003193}}
+  .calendar-calendar table thead {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003196}}
+  .calendar-calendar td.no-entry, .calendar-calendar td.empty {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003199}}
+  .calendar-calendar td {
+    display: block;
+    width: 100%;
+  }
+}
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape) {
+  /* ---- Pager ---- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/calendar\/calendar\.scss}line{font-family:\00003208}}
+  .view-calendar ul.pager {
+    float: right;
+    margin: -30px 0 0 0 !important;
+  }
+}

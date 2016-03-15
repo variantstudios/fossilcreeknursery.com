@@ -1,0 +1,208 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+@import "breakpoint";
+@import "singularitygs";
+
+.ie7, .ie8 {
+	.sidebar-mobile {
+	  display: none;
+	}
+}
+
+
+.sidebar-mobile {
+	@include breakpoint($desktop) {
+	  display: none;
+	}
+	@include breakpoint($tablet) {
+		float: right;
+	}
+  margin: 1em 0 0;
+  background: #52854D;
+  padding: .2em 1.2em .35em;
+	border-radius: 4px;
+	margin-right: 1em;
+  a {
+    text-decoration: none;
+	  font-weight: 700;
+		color: #fff;
+		display: block;
+  }
+}
+
+
+
+
+.sidebar {
+  @include breakpoint($phone) {  
+  }
+  /* Facets */
+  .block-facetapi {
+     padding: 5px 0;
+     background: #E7E8DA url('../images/header-bg.jpg') repeat;
+	   padding: 10px 15px 5px;
+	   @include breakpoint($desktop) {
+	   
+	   }
+	   h2 {
+		   font-family: "proxima-nova",sans-serif;
+		   font-weight: 700;
+		   font-size: 100%;
+		   margin: 8px 0 0px;
+	   }
+	   ul {
+	     padding: 0;
+	     margin: 0;
+		   li {
+			   list-style: none;
+			   padding: 0;
+			   a {
+			     font-family: "proxima-nova",sans-serif;
+			     color: #58595B;
+			     text-decoration: none;
+			     font-size: 90%;
+
+				   &:before {
+				    content: "\25BA \0020";
+						font-size: 7px;
+						padding: 0 10px;
+						margin-top: -2px;
+						color: #222;
+						}
+			   }
+		   }
+	   }
+	   .facetapi-limit-link {
+		    display: block;
+		    margin: 5px 28px 10px;
+		    color: #52854D;
+		    font-weight: 700;
+		}
+  }
+  
+  .sidebar-block {
+	   background: #E7E8DA url('../images/header-bg.jpg') repeat;
+		   padding: 10px 15px;
+		   margin: 20px 0;
+	   @include breakpoint($desktop) {
+		   
+	   }
+	   h2 {
+		   font-family: "proxima-nova",sans-serif;
+		   font-weight: 700;
+		   font-size: 110%;
+	   }
+	   ul {
+		   padding: 5px 10px;
+	   }
+	   li {
+		   margin: 0;
+	   }
+	   .delete {
+	     margin: -5px 0 10px;
+		   a {
+			  color: #CF1111;
+				font-style: italic;
+				text-decoration: none;
+				font-weight: 700;
+				font-size: 80%;
+				&.unflagged {
+					color: #24B616;
+				}
+		   }
+	   }
+  }
+ 
+ 
+  .wishlist-block {
+	   h2 {
+		   font-family: "proxima-nova",sans-serif;
+		   font-weight: 700;
+		   font-size: 100%;
+	   }
+	   a {
+		     font-family: "proxima-nova",sans-serif;
+		     color: #58595B;
+		     text-decoration: none;
+		     font-size: 90%;
+	     }
+  } 
+  
+    .reset-filter {
+		background: #b11d1d;
+		@include border-radius(4px);
+		padding: 0;
+		margin: 15px 0;
+		p {
+			a {
+				color: #fff;
+				text-decoration: none;
+				display: block;
+				padding: 10px 15px;
+			}
+		}
+	}
+  
+  
+  .front-sidebar-block {
+		padding: 0;
+		h2 {
+		  font-size: 140%;
+			padding: 10px 15px 5px;
+			background: $subhead;
+			color: #fff;
+		}
+		h5 {
+  		margin-top: 0;
+		}
+		h6 {
+      margin: 0em 0 0.5em;
+		}
+		.content {
+			padding: 15px;
+		}
+  }
+  
+.search-block {
+
+	.views-exposed-widget {
+		float: none;
+	}
+	.form-submit {
+		margin-top: 0;
+	}
+}
+	.anon-wishlist-block {
+		.content {
+			a {
+				background: $btn-color;
+		    padding: .4em 2.2em .35em;
+		    display: inline-block;
+		    font-size: 100%;
+		    color: #fff;
+		    font-weight: 700;
+		    text-decoration: none;
+		    border-radius: 35px;
+		    @include animate-all-on-hover;
+		    font-family: "proxima-nova",sans-serif;
+		    border: none;
+		    &:hover {
+		      background: $btn-hover-color;
+		      color: #fff;
+		      text-decoration: none;
+		    }
+		    &:visited {
+			    color: #fff;
+		    }
+			}
+		}
+	}
+	
+}
+
+/* Store Landing - Hide Facets */
+.store-landing-page {
+	.hide-on-landing {
+		display: none;
+	}
+}

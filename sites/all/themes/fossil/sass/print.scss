@@ -1,0 +1,29 @@
+////////////////////////
+// Print File
+//
+// This file gets turned into print.css.
+// This file is styles specific to Printed files.
+////////////////////////
+
+////////////////////////
+// Base Import
+////////////////////////
+@import 'partials/global/base';
+
+
+////////////////////////
+// Custom Code
+////////////////////////
+
+
+.page-node-850 {
+	header, footer, .header--image--section, .bottom-footer, #block-views-header-images-block-4, #block-delta-blocks-messages, #block-delta-blocks-tabs, .view-footer {
+		display:none;
+	}
+	#block-system-main {
+		padding: 80px 0 0;
+		h1, h2 {
+			color: #888 !important;
+		}
+	}
+}

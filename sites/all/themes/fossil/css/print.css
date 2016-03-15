@@ -1,0 +1,40 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/public_html\/sites\/all\/themes\/fossil\/vendor\/bundle\/ruby\/1\.9\.1\/gems\/toolkit-1\.0\.0\/stylesheets\/toolkit\/_border-box\.scss}line{font-family:\000036}}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/public_html\/sites\/all\/themes\/fossil\/vendor\/bundle\/ruby\/1\.9\.1\/gems\/toolkit-1\.0\.0\/stylesheets\/toolkit\/_fluid-media\.scss}line{font-family:\000034}}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -- BREAKPOINTS -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/public_html\/sites\/all\/themes\/fossil\/sass\/partials\/global\/_extendables\.scss}line{font-family:\000038}}
+.clearfix {
+  *zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/public_html\/sites\/all\/themes\/fossil\/sass\/partials\/global\/_extendables\.scss}line{font-family:\0000314}}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/public_html\/sites\/all\/themes\/fossil\/sass\/partials\/global\/_extendables\.scss}line{font-family:\0000319}}
+.clearfix:after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/public_html\/sites\/all\/themes\/fossil\/sass\/print\.scss}line{font-family:\0000320}}
+.page-node-850 header, .page-node-850 footer, .page-node-850 .header--image--section, .page-node-850 .bottom-footer, .page-node-850 #block-views-header-images-block-4, .page-node-850 #block-delta-blocks-messages, .page-node-850 #block-delta-blocks-tabs, .page-node-850 .view-footer {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/public_html\/sites\/all\/themes\/fossil\/sass\/print\.scss}line{font-family:\0000323}}
+.page-node-850 #block-system-main {
+  padding: 80px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/public_html\/sites\/all\/themes\/fossil\/sass\/print\.scss}line{font-family:\0000325}}
+.page-node-850 #block-system-main h1, .page-node-850 #block-system-main h2 {
+  color: #888 !important;
+}

@@ -1,0 +1,43 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+@import "breakpoint";
+@import "singularitygs";
+
+.cart_contents {
+  margin-bottom: 30px;
+   @include breakpoint($desktop) {
+	   float: right;
+	   width: 30%;
+   }
+  table {
+    border: 0;
+    margin: 10px 0 0;
+  }
+  table thead, table tfoot {
+    background: none;
+  }
+  tr.even, tr.odd, tr {
+    background: none;
+    border: 0;
+    padding: 0;
+    td, th {
+      padding: 8px 30px 8px 0;
+    }
+  }
+  td {
+    font-size: 15px;
+    font-weight: normal;
+    color: #777;
+  }
+}
+
+.commerce-price-formatted-components {
+  width: auto !important;
+ 
+ .component-type-commerce-price-formatted-amount {
+	 border: 0;
+	  .component-title, .component-total {
+		  font-weight: 700;
+	  }
+	}
+}

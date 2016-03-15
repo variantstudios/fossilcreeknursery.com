@@ -1,0 +1,152 @@
+////////////////////////
+// Mixins Partials
+//
+// All of your mixins should go in this file.
+////////////////////////
+
+@mixin hide-text {
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+@mixin body {
+  color: $body;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+@mixin heading {
+  color: $accent-three;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  margin: 0 0 10px;
+}
+
+@mixin subheading {
+  color: $accent-four;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@mixin link {
+  font-family: "proxima-nova", sans-serif;
+  color: #691C16;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@mixin clearfix {
+  &:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+  }
+}
+
+@mixin animate-all-on-hover {
+  transition: all .3s linear; 
+  -webkit-transition: all .3s linear; 
+  -moz-transition: all .3s linear;
+}
+
+
+
+@mixin inner-shadow {
+-webkit-box-shadow: inset 2px 2px 2px 0px rgba(0, 0, 0, .2); 
+box-shadow: inset 2px 2px 2px 0px rgba(0, 0, 0, .2);
+}
+
+@mixin white-btn {
+  background: #fff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #e2e2e2 0%, #ffffff 9%, #f7f7f7 18%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(9%,#ffffff), color-stop(18%,#f7f7f7), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #e2e2e2 0%,#ffffff 9%,#f7f7f7 18%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #e2e2e2 0%,#ffffff 9%,#f7f7f7 18%,#ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #e2e2e2 0%,#ffffff 9%,#f7f7f7 18%,#ffffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #e2e2e2 0%,#ffffff 9%,#f7f7f7 18%,#ffffff 100%); /* W3C */
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #D0D1D3;
+  @include border-radius(5px);
+  font-family: "proxima-nova";
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+    text-shadow: none;
+    padding: 9px 25px;
+
+}
+
+@mixin stripe-bar {
+     background-size: 35px 35px;
+background-color: #65CE3C;
+background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .1) 25%, transparent 25%,
+                  transparent 50%, rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, .2) 75%,
+                  transparent 75%, transparent);
+background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .1) 25%, transparent 25%,
+                  transparent 50%, rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, .2) 75%,
+                  transparent 75%, transparent);
+background-image: linear-gradient(135deg, rgba(255, 255, 255, .1) 25%, transparent 25%,
+                  transparent 50%, rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, .1) 75%,
+                  transparent 75%, transparent);
+}
+
+@mixin gray-stripe {
+  background-color: #E4E4E4;
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+                      transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+                      transparent 75%, transparent);
+    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+                      transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+                      transparent 75%, transparent);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+                      transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+                      transparent 75%, transparent);
+}
+
+@mixin active-stripe {
+background-size: 35px 35px;
+background-color: #EDBB1A;
+background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+}
+
+@mixin checkout-titles {
+  font-family: "proxima-nova",serif;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+
+/* -- BREAKPOINTS -- */
+@mixin breakpoints($point) {
+  @if $point == phone {
+    @media all and (max-width: 760px) { @content; }
+  }
+  @else if $point == tablet-down {
+    @media all and (max-width: 979px) { @content; }
+  }
+  @else if $point == tablet {
+    @media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape) { @content; }
+  }
+  @else if $point == desktop {
+    @media all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape) { @content; }
+  }
+  @else if $point == lg-desktop {
+    @media all and (min-width: 1220px)  { @content; }
+  }
+}

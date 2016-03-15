@@ -1,0 +1,56 @@
+diff --git a/core/modules/simpletest/drupal_web_test_case.php b/core/modules/simpletest/drupal_web_test_case.php
+index 9d993d4..9fab2dd 100644
+--- a/core/modules/simpletest/drupal_web_test_case.php
++++ b/core/modules/simpletest/drupal_web_test_case.php
+@@ -1833,7 +1833,7 @@ class DrupalWebTestCase extends DrupalTestCase {
+         $submit_matches = $this->handleForm($post, $edit, $upload, $ajax ? NULL : $submit, $form);
+         $action = isset($form['action']) ? $this->getAbsoluteUrl((string) $form['action']) : $this->getUrl();
+         if ($ajax) {
+-          $action = $this->getAbsoluteUrl(!empty($submit['path']) ? $submit['path'] : 'system/ajax');
++          $action = $this->getAbsoluteUrl(!empty($submit['path']) ? $submit['path'] : url('system/ajax'));
+           // Ajax callbacks verify the triggering element if necessary, so while
+           // we may eventually want extra code that verifies it in the
+           // handleForm() function, it's not currently a requirement.
+@@ -1982,7 +1982,10 @@ class DrupalWebTestCase extends DrupalTestCase {
+     // Unless a particular path is specified, use the one specified by the
+     // Ajax settings, or else 'system/ajax'.
+     if (!isset($ajax_path)) {
+-      $ajax_path = isset($ajax_settings['url']) ? $ajax_settings['url'] : 'system/ajax';
++      $ajax_path = isset($ajax_settings['url']) ? $ajax_settings['url'] : url('system/ajax');
++    }
++    else {
++      $ajax_path = url($ajax_path);
+     }
+ 
+     // Submit the POST request.
+@@ -2481,7 +2484,8 @@ class DrupalWebTestCase extends DrupalTestCase {
+    * @param $path
+    *   A path from the internal browser content.
+    * @return
+-   *   The $path with $base_url prepended, if necessary.
++   *   The $path with the internal browser's base URL or $base_url prepended, if
++   *   necessary.
+    */
+   protected function getAbsoluteUrl($path) {
+     global $base_url, $base_path;
+@@ -2490,6 +2494,20 @@ class DrupalWebTestCase extends DrupalTestCase {
+     if (empty($parts['host'])) {
+       // Ensure that we have a string (and no xpath object).
+       $path = (string) $path;
++      // Return an absolute URL based on the internal browser's current URL if
++      // it is not using the internal: scheme.
++      $parts = parse_url($this->getUrl());
++      if ($parts['scheme'] != 'internal') {
++        $port = isset($parts['port']) ? ':' . $parts['port'] : '';
++        $url = $parts['scheme'] . '://' . $parts['host'] . $port;
++        if ($path[0] === '/') {
++          $url .= $path;
++        }
++        else {
++          $url .= preg_replace('@(.*/)([^/]*)@', '$1' . $path, $parts['path']);
++        }
++        return $url;
++      }
+       // Strip $base_path, if existent.
+       $length = strlen($base_path);
+       if (substr($path, 0, $length) === $base_path) {

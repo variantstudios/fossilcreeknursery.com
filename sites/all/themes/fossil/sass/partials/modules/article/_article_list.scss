@@ -1,0 +1,49 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+@import "compass/css3";
+@import "breakpoint";
+@import "singularitygs";
+
+
+.view-blog.blog-list-view {
+  .views-row {
+    float: left;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    width: 100%;
+    @include clearfix;
+  }
+}
+
+.article-list-item {
+	.post-date {
+	  @include breakpoint($desktop) {
+	    float: right;
+	    margin-top: 15px;
+	  }
+	}
+}
+
+.list-title {
+  margin: 0em !important;
+  @include breakpoint($desktop) {
+  float: left;
+  }
+} 
+
+.content-header {
+	border-bottom: 1px solid #E5E6E7;
+	padding-bottom: 1em;
+	margin-bottom: 1.5em;
+}
+
+.front-news {
+  .article-list-item {
+  	.post-date {
+  	  @include breakpoint($desktop) {
+  	    float: none;
+  	    margin-top: 0px;
+  	  }
+  	}
+  }
+}

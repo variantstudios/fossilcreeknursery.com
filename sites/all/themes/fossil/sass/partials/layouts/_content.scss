@@ -1,0 +1,256 @@
+@import "breakpoint";
+@import "singularitygs";
+
+$breakpoint-no-query-fallbacks: true;
+
+
+body {
+  background: #fff;
+  margin: 0 auto;
+}
+
+
+.page-wrap {
+	overflow: hidden;
+	position: relative;
+}
+.wrap {
+  width: 100%;
+  max-width: $phone;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  @include clearfix;
+  position: relative;
+  overflow: hidden;
+  /*@include background-grid;*/
+  @include breakpoint($tablet) {
+    max-width: $tablet;
+    padding: 0px;
+  }
+  @include breakpoint($desktop) {
+    max-width: $desktop;
+  }
+  @include breakpoint($lg-desktop) {
+    max-width: $lg-desktop;
+  }
+}
+.ie8, .ie7 {
+	.wrap {
+		max-width: $desktop;
+	}
+}
+
+.postscript {
+  padding: 10px 0 60px;
+  background: #FBFAF8;
+	.wrap {
+		 @include breakpoint($tablet) {
+			padding: 0 40px;
+			
+		}
+	}
+}
+
+#header {
+  @include grid-span (1, 1);
+  position: relative;
+  z-index: 999;
+}
+
+.logo-section {
+  @include grid-span (1, 1);
+  @include breakpoint($tablet) {
+    @include grid-span (12, 1);
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (3, 1);
+  }
+}
+
+nav.navigation {
+  @include grid-span (1, 1);
+  @include breakpoint($tablet) {
+    @include grid-span (6, 7);
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (9, 4);
+  }
+}
+
+
+
+.logged-in .page {
+  margin-top: 60px;
+}
+
+#main {
+  @include grid-span (1, 1);
+  padding: 10px 0 20px;
+  clear: both;
+  @include breakpoint($phone) {
+	  @include animate-all-on-hover;
+  }
+  @include breakpoint($tablet) {
+    @include grid-span (12, 1);
+    min-height: 185px;
+    
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (8.5, 1);
+    padding: 20px 0;
+  }
+}
+
+
+
+.sidebar {
+@include grid-span (1, 1);
+ padding: 20px 0 30px;
+ @include breakpoint($tablet) {
+    @include grid-span (12, 1);
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (3.5, 9.5);
+  }
+}
+.no-sidebar #main {
+  @include grid-span (1, 1);
+  @include breakpoint($tablet) {
+    @include grid-span (12, 1);
+    clear: both;
+     padding: 20px 0;
+  }
+  @include breakpoint($desktop) {
+    @include grid-span (12, 1);
+  }
+}
+
+#main--content .wrap,  {
+  @include breakpoint($tablet) {
+		padding: 0 40px;
+		margin-top: -120px;
+		background: #fff;
+	}
+}
+
+.ie7, .ie8 {
+	#sidebar {
+		width: 27.9661%;
+		float: right;
+		margin-left: 0;
+		margin-right: 0;
+		clear: none;
+	}
+	#main {
+		width: 70.33898%;
+		float: left;
+		margin-right: -100%;
+		margin-left: 0%;
+		clear: none;
+		padding: 20px 0;
+	}
+}
+
+
+
+
+.node-blog-post.node-teaser, .node-blog-post.view-mode-full {
+  @include grid-span (1);
+  /*@include background-grid;*/
+  .ds-col-one {
+    @include breakpoint($tablet) {
+      @include grid-span (1.5, 1);
+    }
+  }
+  .ds-col-two {
+    @include breakpoint($tablet) {
+      @include grid-span (9.5, 3);
+    }
+  }
+}
+
+.node-product.view-mode-full, .node-product.view-mode-gift_certificate {
+	.ds-col-one {
+		@include breakpoint($tablet) {
+	    @include grid-span (7.5, 1);
+	  }
+  }
+  .ds-col-two {
+    padding: 1em 0;
+	  @include breakpoint($tablet) {
+	    @include grid-span (4, 9);
+	  }
+  }
+}
+
+/* -- Static Page Layout --*/
+.static-page-layout {
+	&.sidebar-exists {
+		.content-block {
+			@include breakpoint($tablet) {
+		    @include grid-span (7.5, 1);
+		  }
+	  }
+	  .sidebar-block {
+	    padding: 1em 0;
+		  @include breakpoint($tablet) {
+		    @include grid-span (4, 9);
+		  }
+	  }
+	}
+}
+
+
+/* -- Article List Layout --*/
+.article-list-item {
+	.thumbnail-section {
+		@include breakpoint($tablet) {
+	    @include grid-span (3, 1);
+	  }
+	}
+	.content-section {
+		@include breakpoint($tablet) {
+	    @include grid-span (8.5, 4.5);
+	  }
+		@include breakpoint($desktop) {
+	    @include grid-span (8.5, 4.5);
+	  }
+		@include breakpoint($lg-desktop) {
+	    @include grid-span (9, 4);
+	  }
+	}
+}
+
+.front-news {
+  .thumbnail-section {
+		@include breakpoint($tablet) {
+	    @include grid-span (0, 1);
+	  }
+	}
+	.content-section {
+		@include breakpoint($tablet) {
+	    @include grid-span (12, 1);
+	  }
+		@include breakpoint($desktop) {
+	    @include grid-span (12, 1);
+	  }
+
+	}
+}
+
+/* -- Article List Layout --*/
+.node-webform {
+	.ds-col-one {
+		@include breakpoint($tablet) {
+	    @include grid-span (5.5, 1);
+	  }
+	}
+	.ds-col-two {
+		@include breakpoint($tablet) {
+	    @include grid-span (5, 7);
+	  }
+	}
+}

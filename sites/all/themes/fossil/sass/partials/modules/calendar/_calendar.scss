@@ -1,0 +1,260 @@
+@import 'partials/global/mixins';
+@import 'partials/global/variables';
+@import "compass/css3";
+@import "breakpoint";
+@import "singularitygs";
+
+
+
+
+.calendar-calendar {
+	h5 {
+		margin: 0;
+		a {
+			color: #52854D;
+			@include breakpoint($phone) {
+  			font-size: 150%;
+			}
+			&:visited {
+				color: #52854D;
+			}
+		}
+	}
+	.date-display-single {
+		font-size: 115%;
+		@include breakpoint($phone) {
+			font-size: 140%;
+		}
+	}
+	td .inner div.day a {
+		color: #888;
+		font-weight: normal;
+	}
+}
+
+.view-calendar {
+  .pager {
+    @include breakpoint($phone) {
+      text-align: center;
+    }
+  }
+}
+
+.event-date {
+   @include breakpoint($tablet) {
+      display: none;
+    }
+}
+
+
+.calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview, .calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview  {
+	background: #fff;
+	padding: 5px;
+	margin: 2px 2px 5px;
+}
+
+/*-----------------------------
+     CALENDAR
+-------------------------------*/
+
+
+/* Show the stripes one below the other (if there are more than one term) */
+.calendar-calendar .day-view td .stripe,
+.calendar-calendar .month-view .full td .stripe,
+.calendar-calendar .week-view .full td .stripe
+{
+  position: relative;
+}
+
+/* move content back to top, as there could be more than one stripe now */
+.calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
+.calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents
+{
+  position: absolute;
+  top: 0;
+}
+
+/* same for the continuation marker at the end */
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff
+{
+  top:0
+}
+
+/*-----------------------------
+    CALENDAR
+-------------------------------*/
+
+/* ---- Pager ---- */
+
+
+
+.view-calendar{
+	ul.pager{
+	  width: 100%;
+	  margin: 0 auto !important;
+		@include breakpoint($tablet) {
+			width: 150px;
+			
+		}
+		li.date-next,
+		li.date-prev{
+		  padding: 0;
+		  margin: 0;
+		  width: 85px;
+		  background: none;
+		  @include border-radius(0);
+			a{
+				&:hover{
+				  border: none;
+			  }
+			}
+		}
+		li.date-prev{
+			right: 70px;
+		}
+	}
+}
+
+@include breakpoint($phone) {
+	.view-calendar{
+	  .date-heading {
+		  margin: 30px 0 0px;
+	  }
+		ul.pager{
+		  width: 100%;
+		  margin: 0 auto !important;
+		  float: left;
+			li.date-next,
+			li.date-prev{
+			  padding: 0;
+			  margin: 0;
+			  right: auto;
+			  width: auto !important;
+			  background: none;
+			  @include border-radius(0);
+			  position: relative;
+			}
+		}
+	}
+}
+
+.calendar-calendar .month-view .full td.single-day div.monthview, 
+.calendar-calendar .week-view .full td.single-day div.weekview, 
+.calendar-calendar .day-view .full td.single-day div.dayview{
+	tbody{
+		tr{
+		  &:hover{
+			  border: none;
+		  }
+		}
+	}
+	.views-field-title{
+	line-height: 0.6em;
+	margin: 0 0 2px 0;
+		span{
+			line-height: 1em;
+			font-size: 18px;
+			a{
+				font-size: 18px;
+				text-decoration: none;
+				line-height: 1em;	
+				&:hover{
+					color: #333;
+				}
+			}
+		}
+	}
+	.views-field-field-performance-date-and-time{
+	  span{
+		  font-size: 14px;
+		  color: #555;
+		}
+	}
+	.event-cal-icon{
+	  
+		a{
+			display: block;
+			height: 40px;
+			width: 40px;
+			@include hide-text;
+		}
+	}
+}
+
+/* TODAY */
+.calendar-calendar .month-view .full tr td.single-day.today,
+.calendar-calendar .month-view .full td.date-box.today{
+  border-left: 2px solid #EDBB1A;
+  border-right: 2px solid #EDBB1A;
+  border-color: #EDBB1A;
+}
+
+/* HOVER */
+.calendar-calendar{
+  div.day{
+	  color: #888;
+  }
+  table.full{
+	  tbody{
+		  tr{
+			  &:hover{
+				  td{
+					  background: none
+				  }
+			  }
+			  td{
+				  background: #fff;
+				}
+			}
+	  }
+  }	
+}
+/*  TABLE HEAD*/
+.calendar-calendar td{
+	border: 1px solid #bbb;
+}
+.calendar-calendar th.days{
+	background: #ddd;
+	padding: 10px 0;
+	text-transform: uppercase;
+	border: 1px solid #ddd;
+}
+
+/* ---- RESPONSIVE LAYOUT FOR MOBILE ---- */
+@media (max-width: 740px) {
+.calendar-calendar td, 
+.calendar-calendar .month-view .full tr td.single-day.today, 
+.calendar-calendar tbody, 
+.calendar-calendar .month-view .full td.single-day .calendar-empty, 
+.calendar-calendar .month-view .full td.single-day.empty, 
+.calendar-calendar .month-view .full td.date-box.empty{
+      border:0;
+      background: none;
+  }
+  .calendar-calendar tr.date-box{
+        display:none;
+  }
+  .calendar-calendar table thead{
+        display:none;
+  }
+  .calendar-calendar td.no-entry, .calendar-calendar td.empty{
+       display:none;
+  }
+  .calendar-calendar td{
+     display:block;
+     width:100%;
+    }
+}
+
+@media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape) {
+  /* ---- Pager ---- */
+  .view-calendar{
+  	ul.pager{
+  		float: right;
+  		margin: -30px 0 0 0 !important;
+  	}
+  }
+}

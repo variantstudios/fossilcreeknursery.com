@@ -1,0 +1,57 @@
+@import "breakpoint";
+@import "singularitygs";
+
+.front-calls {
+	.views-row {
+		@include breakpoint($phone) {
+			margin-bottom: 3em;
+			img {
+				margin: 0 auto;
+				text-align: center;
+				display: block;
+			}
+		}
+	}
+	
+	.views-row-1 {
+		@include breakpoint($tablet) {
+	    @include grid-span (4, 1);
+	  }
+	}
+	.views-row-2 {
+		@include breakpoint($tablet) {
+	    @include grid-span (4, 5);
+	  }
+	}
+	.views-row-3 {
+		@include breakpoint($tablet) {
+	    @include grid-span (4, 9);
+	  }
+	}
+	h3 {
+		margin: 0.5em 0 0;
+	}
+	p {
+		margin: 0.3em 0 1em;
+	}
+}
+
+.front-news {
+	@include breakpoint($phone) {
+		.views-row {
+			margin-bottom: 3em;
+		}
+		.views-row-last {
+			margin-bottom: 0em;
+		}
+	}
+  @include breakpoint($tablet) {
+    .views-row {
+      width: 48%;
+      float: left;
+      &.views-row-last {
+        float: right;
+      }
+    }
+  }
+}

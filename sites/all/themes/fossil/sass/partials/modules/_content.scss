@@ -1,0 +1,41 @@
+.content {
+	blockquote {
+		margin: 25px 0;
+		padding: 20px;
+		background-color: #f5f5f5;
+	}
+}
+
+
+.view-resource-library {
+  .views-exposed-form {
+    margin: 1em 1em 3em;
+  }
+  .views-row-odd {
+    background: #F5F5F5;
+  }
+  .views-row {
+    padding: 2em;
+    h2 {
+      margin-top: 0;
+    }
+    .file {
+      img {
+        display: none;
+      }
+      a {
+      position: relative;
+      display: block;
+        &:before {
+            content: "\f138";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+            padding-right: 0.5em;
+        }
+      }
+    }
+  }
+  
+}

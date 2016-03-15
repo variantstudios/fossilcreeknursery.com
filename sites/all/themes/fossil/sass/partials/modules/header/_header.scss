@@ -1,0 +1,58 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+@import 'partials/global/sprites';
+
+
+
+.header--section {
+    background: #E7E8DA url('../images/header-bg.jpg') repeat;
+		-moz-box-shadow: 0px 0px 4px 2px #414141;
+	  -webkit-box-shadow: 0px 0px 4px 2px #414141;
+		box-shadow: 0px 0px 4px 2px #414141;
+
+}
+/* -- Logo -- */
+#site-name {
+  display: block;
+  @include breakpoints(phone) {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  h1 {
+     margin: 60px auto 20px;
+     @include hide-text;
+     @include get-sprite($icons, logo); 
+     @include breakpoint($desktop) {
+       margin: 20px auto 20px;
+     }
+
+   }
+}
+
+/*.page-user {
+	#site-name {
+		h1 {
+			background: url("http://www.fossilcreeknursery.com/sites/all/themes/fossil/images/icons.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    display: block;
+    height: 101px;
+    overflow: hidden;
+    text-indent: 150%;
+    white-space: nowrap;
+    width: 290px;
+		}
+	}
+}
+*/
+/*
+
+#site-name h1 {
+    margin: 60px auto 20px;
+    text-indent: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    background: url(/sites/all/themes/fossil/images/icons.png) 0 0 no-repeat;
+    height: 101px;
+    width: 290px;
+}
+*/

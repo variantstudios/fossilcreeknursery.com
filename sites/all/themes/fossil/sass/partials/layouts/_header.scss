@@ -1,0 +1,13 @@
+
+
+.header--image--section {
+	height: 180px;
+	margin-top: 160px;
+	@include breakpoint($tablet) {
+	  height: 420px;
+    margin-top: 180px;
+	}
+	@include breakpoint($desktop) {
+    margin-top: 140px;
+	}
+}

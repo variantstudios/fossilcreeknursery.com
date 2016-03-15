@@ -1,0 +1,106 @@
+@import 'partials/global/mixins';
+
+
+footer {
+  clear: both;
+  background: #E7E8DA url('../images/footer-bg.jpg') repeat;
+	padding: 10px;
+  @include breakpoint($tablet) {
+	  padding: 30px;
+  }
+  @include breakpoint($phone) {
+	  h2 {
+		  line-height: 1.2;
+			margin-bottom: 10px;
+	  }
+  }
+}
+.bottom-footer {
+	background: #E7E8DA url('../images/header-bg.jpg') repeat;
+	padding: 10px;
+  @include breakpoint($tablet) {
+	  padding: 15px;
+  }
+}
+
+.footer-left {
+	  @include breakpoint($phone) {
+	     margin-top: 10px;
+			 margin-bottom: 30px;
+	  }
+	  @include breakpoint($tablet) {
+	    @include grid-span (6, 1);
+	  }
+	  ul.menu {
+		  -moz-column-count: 3;
+       -moz-column-gap: 20px;
+       -webkit-column-count: 3;
+       -webkit-column-gap : 20px;
+       a {
+	       color: #58595B;
+	       text-decoration: none;
+	       font-style: italic;
+       }
+	  }
+	  i {
+  	  font-size: 170%;
+      padding: 0 10px;
+      color: #1B66B9;
+	  }
+  }
+  
+  
+  .footer-right {
+	  @include breakpoint($tablet) {
+	    @include grid-span (6, 7);
+	  }
+	  label {
+		  display: inline-block;
+		  margin-right: 20px;
+
+	  }
+	  form {
+		  p {
+			  margin: 10px 0;
+		  }
+		  button {
+			  margin-left: 65px;
+				margin-top: 5px;
+		  }
+		  input {
+  		  width: auto;
+		  }
+	  }
+  }
+  
+  footer {
+	  h2 {
+		  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+		  font-size: 200%;
+			font-weight: 800;
+	  }
+	  h6 {
+		   font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+		  font-size: 150%;
+	  }
+  }
+  
+  .site-by {
+	  text-align: left;
+	  @include breakpoint($tablet) {
+			text-align: right;
+	  }
+  }
+  
+  
+.bottom-footer-left {
+   @include breakpoint($tablet) {
+	    @include grid-span (8, 1);
+	  }
+}
+
+.bottom-footer-right {
+   @include breakpoint($tablet) {
+	    @include grid-span (4, 9);
+	  }
+}

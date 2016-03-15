@@ -1,0 +1,47 @@
+@import 'partials/global/variables';
+@import 'partials/global/mixins';
+@import "compass/css3";
+@import "breakpoint";
+@import "singularitygs";
+
+.store-landing-block {
+  @include clearfix;
+  h2 {
+	  font-size: 120%;
+	  color: #52854D;
+	  letter-spacing: normal;
+	  font-weight: normal;
+		font-style: italic;
+  }
+  h6 {
+	  margin: 0.4em 0 0.5em;
+  }
+	.views-row {
+	  text-align: center;
+	  border: 1px solid #ccc;
+	  @include breakpoint($phone) {
+		  margin: 0 0 15px;
+			border-radius: 4px;
+			img {
+				display: none;
+			}
+	  }
+		@include breakpoint($tablet) {
+	    float: left;
+	    width: 31%;
+	    margin-right: 15px;
+	    margin-bottom: 10px;
+			margin-top: 10px;
+	  }
+		@include breakpoint($desktop) {
+	    float: left;
+	    width: 22%;
+	  }
+	}
+}
+
+.store-landing-page {
+	.products {
+		display: none;
+	}
+}

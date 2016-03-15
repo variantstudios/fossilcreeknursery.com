@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Fossil Header Images feature.
+ */
+
+include_once 'fossil_header_images.features.inc';

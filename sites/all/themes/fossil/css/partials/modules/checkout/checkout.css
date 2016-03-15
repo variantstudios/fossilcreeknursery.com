@@ -1,0 +1,235 @@
+/* -- BREAKPOINTS -- */
+/* Checkout Button */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\000039}}
+.checkout-buttons {
+  margin: 20px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000311}}
+.checkout-buttons .checkout-back {
+  background: #BE4343;
+  padding: 7px 20px 5px;
+  color: #fff;
+  border: 1px solid #9C3C3C;
+  text-decoration: none;
+  margin-top: 10px;
+}
+@media (min-width: tablet) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000311}}
+  .checkout-buttons .checkout-back {
+    margin-top: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000321}}
+.checkout-buttons .checkout-back:hover {
+  background: #a42a2a;
+  text-decoration: none;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000327}}
+.checkout-buttons .button-operator {
+  padding: 0 15px;
+}
+
+/* REmove from cart Button */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000334}}
+.view-commerce-cart-form .delete-line-item {
+  background: #BE4343;
+  padding: 3px 8px !important;
+  text-transform: none;
+  border: 1px solid #9C3C3C;
+  font-size: 14px !important;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000341}}
+.view-commerce-cart-form .delete-line-item:hover {
+  background: #a42a2a;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000349}}
+.page-checkout .form-item label {
+  font-size: 18px;
+  color: #777;
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000355}}
+.page-checkout .description {
+  margin: 10px 0;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* REgistration */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000364}}
+.page-checkout.page-checkout-registration #zone-content-wrapper .fieldset-title {
+  font-family: "proxima-nova",serif;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000367}}
+.page-checkout.page-checkout-registration #zone-content-wrapper fieldset.collapsible {
+  padding: 30px 0;
+  border-top: 1px solid #ECECEC;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000370}}
+.page-checkout.page-checkout-registration #zone-content-wrapper fieldset.collapsible .fieldset-wrapper {
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000374}}
+.page-checkout.page-checkout-registration #zone-content-wrapper fieldset.registration_information > legend {
+  margin: 40px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000378}}
+.page-checkout.page-checkout-registration #zone-content-wrapper .form-item label {
+  display: inline-block;
+  padding-top: 5px;
+}
+@media (min-width: tablet) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000378}}
+  .page-checkout.page-checkout-registration #zone-content-wrapper .form-item label {
+    width: 35%;
+  }
+}
+@media (min-width: desktop) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000378}}
+  .page-checkout.page-checkout-registration #zone-content-wrapper .form-item label {
+    width: 20%;
+  }
+}
+@media (min-width: tablet) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000388}}
+  .page-checkout.page-checkout-registration #zone-content-wrapper .form-item .description {
+    padding-left: 35%;
+  }
+}
+@media (min-width: desktop) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000388}}
+  .page-checkout.page-checkout-registration #zone-content-wrapper .form-item .description {
+    padding-left: 20%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000396}}
+.page-checkout.page-checkout-registration #zone-content-wrapper .form-item .form-textarea-wrapper {
+  display: inline-block;
+}
+@media (min-width: tablet) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\0000396}}
+  .page-checkout.page-checkout-registration #zone-content-wrapper .form-item .form-textarea-wrapper {
+    width: 64%;
+  }
+}
+@media (min-width: tablet) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003102}}
+  .page-checkout.page-checkout-registration #zone-content-wrapper .form-item input[type="text"] {
+    width: 64%;
+  }
+}
+@media (min-width: phone) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003109}}
+  .page-checkout.page-checkout-registration #zone-content-wrapper input[type="text"], .page-checkout.page-checkout-registration #zone-content-wrapper input[type="email"], .page-checkout.page-checkout-registration #zone-content-wrapper textarea, .page-checkout.page-checkout-registration #zone-content-wrapper input[type="password"], .page-checkout.page-checkout-registration #zone-content-wrapper input[type="file"] {
+    width: 100%;
+  }
+}
+
+/* REmove deafult styling from .form-item */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003120}}
+.page-checkout.page-checkout-checkout .section-content .form-item {
+  margin: 10px 20px 20px 0;
+  display: inline-block;
+}
+
+/* Copy Billing info */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003129}}
+.form-item-customer-profile-shipping-commerce-customer-profile-copy {
+  padding: 15px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003131}}
+.form-item-customer-profile-shipping-commerce-customer-profile-copy label {
+  font-size: 18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003136}}
+.form-wrapper > legend > .fieldset-legend {
+  font-family: "proxima-nova",serif;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+/* Border on the bottom of the billing section */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003142}}
+.customer_profile_billing.form-wrapper {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 30px;
+}
+
+/* Label on Address On File Field */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003150}}
+.form-item-customer-profile-shipping-addressbook label, .form-item-customer-profile-billing-addressbook label {
+  padding: 10px 0;
+  font-style: italic;
+}
+
+/* Review page Styling */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003157}}
+.checkout-review {
+  margin: 20px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003159}}
+.checkout-review p, .checkout-review span, .checkout-review div, .checkout-review ul li {
+  font-size: 18px;
+  line-height: 1.4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003163}}
+.checkout-review td.pane-data-full {
+  color: #666;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003166}}
+.checkout-review h3 {
+  font-size: 17px;
+  padding: 15px 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003172}}
+.checkout-help {
+  font-style: italic;
+  padding-bottom: 10px;
+  font-size: 23px;
+}
+
+/* Margin to review page that hold payment */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003180}}
+.commerce_payment {
+  margin-top: 40px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003183}}
+#edit-commerce-payment-payment-details-credit-card-exp-month, #edit-commerce-payment-payment-details-credit-card-exp-year {
+  width: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003188}}
+form#commerce-checkout-form-checkout div#commerce-checkout-coupon-ajax-wrapper input.form-submit {
+  margin-top: -70px;
+}
+
+/* coupons - hide remove and delete buttons  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003194}}
+td.commerce-coupon-discount-coupon-remove-cell {
+  display: none;
+}
+
+/* discount - hide remove and delete buttons */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003199}}
+form#commerce-discount-edit-product-discount-form div.form-item.form-type-select.form-item-status {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/checkout\.scss}line{font-family:\00003203}}
+form#commerce-discount-edit-product-discount-form div#edit-actions input.form-submit {
+  display: none;
+}

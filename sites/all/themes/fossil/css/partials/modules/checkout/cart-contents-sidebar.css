@@ -1,0 +1,30 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/cart-contents-sidebar\.scss}line{font-family:\000032}}
+.cart_contents {
+  float: left;
+  margin-bottom: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/cart-contents-sidebar\.scss}line{font-family:\000035}}
+.cart_contents table {
+  border: 0;
+  margin: 10px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/cart-contents-sidebar\.scss}line{font-family:\000039}}
+.cart_contents table thead, .cart_contents table tfoot {
+  background: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/cart-contents-sidebar\.scss}line{font-family:\0000312}}
+.cart_contents tr.even, .cart_contents tr.odd, .cart_contents tr {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/cart-contents-sidebar\.scss}line{font-family:\0000316}}
+.cart_contents tr.even td, .cart_contents tr.even th, .cart_contents tr.odd td, .cart_contents tr.odd th, .cart_contents tr td, .cart_contents tr th {
+  padding: 8px 30px 8px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fossil\/beta-ver-2\/sites\/all\/themes\/fossil\/sass\/partials\/modules\/checkout\/cart-contents-sidebar\.scss}line{font-family:\0000320}}
+.cart_contents td {
+  font-size: 15px;
+  font-weight: 600;
+  color: #777;
+}
